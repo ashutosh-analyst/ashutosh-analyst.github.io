@@ -1186,7 +1186,7 @@ textarea.contact__input {
 }
 
 .footer__social svg {
-  fill: var(--body-color);
+  fill: #fff;
 }
 
 .footer__social:hover {
