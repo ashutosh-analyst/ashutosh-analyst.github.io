@@ -30,14 +30,7 @@
             "from": "DataCamp",
             "image": "certificates/certificate-2.png",
             "verify_url": "https://www.datacamp.com/certificate/DAA0014254778244"
-        },
-        {
-            "date": "2024",
-            "title": "Sample Analyst Associate",
-            "from": "DataCamp",
-            "image": "certificates/certificate-2.png",
-            "verify_url": "https://www.datacamp.com/certificate/DAA0014254778244"
-        },
+        }
     ],
     "projects": [
         {
