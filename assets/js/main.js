@@ -91,6 +91,30 @@ modalCloses.forEach((modalClose) => {
     });
 });
 
+/*==================== EDUCATION MODAL ====================*/
+
+const educationModalViews = document.querySelectorAll('.qualifications__modal'),
+      educationModalBtns = document.querySelectorAll('.qualification-button'),
+      educationModalCloses = document.querySelectorAll('.qualifications__modal-close');
+
+let educationModal = function(modalClick) {
+  educationModalViews[modalClick].classList.add('active-modal');
+}
+    
+educationModalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () => {
+      educationModal(i);
+    });
+});
+
+educationModalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+      educationModalViews.forEach((modalView) => {
+            modalView.classList.remove('active-modal');
+        });
+    });
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 function populatePortfolioProjectSlider() {
@@ -417,6 +441,28 @@ function populateJsonToMarkup() {
       } else {
         portfolioMainContainer.style.display = "block";
       }
+
+      // populate job simulations
+      const jobContainer = document.querySelector(".job__container");
+      const jobs = data.job_simulations || [];
+
+      jobContainer.innerHTML = "";
+      jobs.forEach((cert) => {
+        const cardHTML = `
+          <div class="job__card">
+            <div class="job__img-box">
+              <img src="${cert.image}" alt="${cert.title}" class="job__img">
+            </div>
+            <div class="job__data">
+              <h3 class="job__date">${cert.date}</h3>
+              <h1 class="job__title">${cert.title}</h1>
+              <span class="job__subtitle">${cert.from}</span>
+              <a href="${cert.more_url}" target="_blank" class="button button--flex button--small button--link">More</a>
+            </div>
+          </div>
+        `;
+        jobContainer.innerHTML += cardHTML;
+      });
     })
     .catch((error) => {
       console.error("Error loading website information:", error);

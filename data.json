@@ -57,5 +57,21 @@
             "most_recent": true,
             "pdf_link": "https://drive.google.com/file/d/1P4rjM_zflxFD9MmJigECVNiaTpLsOE_0/view?usp=sharing"
         }
+    ],
+    "job_simulations": [
+        {
+            "date": "October 14th, 2024",
+            "title": "Risk Management Job Simulation",
+            "from": "Forage",
+            "image": "job-simulation/job-1.png",
+            "more_url": "https://drive.google.com/file/d/14-uBx2KUxfxoi9pXSxxl4vvEFVdMSVUc/view?usp=drive_link"
+        },
+        {
+            "date": "September 20th, 2024",
+            "title": "Underwriting Job Simulation",
+            "from": "Forage",
+            "image": "job-simulation/job-2.png",
+            "more_url": "https://drive.google.com/file/d/1Lyaw-d0AElDUseL9RciQtyXEaspz18vJ/view?usp=sharing"
+        }
     ]
 }

@@ -582,6 +582,63 @@ img {
   margin-top: var(--mb-3);
 }
 
+/*==================== JOB SIMULATION ====================*/
+.job__container {
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.job__card {
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .3s;
+}
+
+.job__card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+.job__img-box {
+  overflow: hidden;
+}
+
+.job__img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  transition: .4s ease-out;
+}
+
+.job__card:hover .job__img {
+  transform: scale(1.2);
+}
+
+.job__data {
+  padding: 2rem .5rem 1.25rem 1rem;
+}
+
+.job__date {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+
+.job__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-0-5);
+}
+
+.job__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-top: var(--mb-0-25);
+  margin-bottom: var(--mb-1);
+}
+
 /*==================== ALL PROJECTS ====================*/
 .projects__container {
   gap: 1.5rem;
@@ -745,6 +802,12 @@ img {
 .skills__word {
   width: 90%;
 }
+.skills__cat_tools {
+  width: 90%;
+}
+.skills__rms {
+  width: 95%;
+}
 
 .skills__close .skills__list {
   height: 0;
@@ -797,6 +860,14 @@ img {
   font-weight: var(--font-medium);
 }
 
+#education .qualification__title {
+  cursor: pointer;
+}
+
+#education .qualification__title:hover {
+  color: var(--first-color);
+}
+
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
@@ -830,6 +901,63 @@ img {
 
 .qualification__active[data-content] {
   display: block;
+}
+
+.qualifications__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.qualifications__modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.qualifications__modal-qualifications {
+  row-gap: 1rem;
+}
+
+.qualifications__modal-qualification {
+  display: flex;
+}
+
+.qualifications__modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.qualifications__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.qualifications__modal-icon {
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+
+.qualifications__highlight {
+  color: var(--first-color);
+  font-weight: 800;
 }
 
 /*==================== SERVICES ====================*/
@@ -1316,6 +1444,17 @@ textarea.contact__input {
   .testimonial__description {
     text-align: center;
   }
+
+  .qualifications__modal-content {
+    padding: 1rem;
+  } 
+  .qualifications__modal-qualifications li {
+    font-size: var(--small-font-size);
+  }
+
+  .qualifications__modal-close {
+    right: .6rem;
+  }
 }
 
 /* For medium devices */
@@ -1341,6 +1480,7 @@ textarea.contact__input {
   .contact__container,
   .footer__container,
   .certification__container,
+  .job__container,
   .projects__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1357,6 +1497,10 @@ textarea.contact__input {
 
   .project__banner--button {
     margin-bottom: var(--mb-1-5);
+  }
+
+  .qualifications__modal-content {
+    width: 600px;
   }
 }
 
