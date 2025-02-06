@@ -34,11 +34,19 @@
     ],
     "projects": [
         {
+            "title": "Working with Subqueries in SQL", 
+            "description": "A hands-on exploration of SQL subqueries. It covers practical applications of subqueries in the WHERE, FROM, and SELECT clauses using the employees database. Why This Project Matters? Mastering subqueries is essential for database professionals, analysts, and data engineers, as they allow for efficient data manipulation, filtering, and reporting without requiring complex joins or temporary tables.",
+            "image": "projects/Coursera_SQL_Subquery_img.png",
+            "demo_url": "",
+            "most_recent": true,
+            "pdf_link": "projects/pdf/1.Coursera_Guided_Project_SQL_code.pdf" 
+        },
+        {
             "title": "Bank Loan Default Analysis using EDA",
             "description": "Performed Exploratory Data Analysis (EDA) to identify patterns in loan defaults, enabling better decisions on loan approvals and risk management.",
             "image": "projects/project-1.png",
             "demo_url": "",
-            "most_recent": true,
+            "most_recent": false,
             "pdf_link": "projects/pdf/Bank_Loan_Report_Python.pdf"
         },
         {
