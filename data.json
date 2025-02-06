@@ -35,7 +35,7 @@
     "projects": [
         {
             "title": "Working with Subqueries in SQL", 
-            "description": "A hands-on exploration of SQL subqueries. It covers practical applications of subqueries in the WHERE, FROM, and SELECT clauses using the employees database. Why This Project Matters? Mastering subqueries is essential for database professionals, analysts, and data engineers, as they allow for efficient data manipulation, filtering, and reporting without requiring complex joins or temporary tables.",
+            "description": "A hands-on exploration of SQL subqueries. It covers practical applications of subqueries in the WHERE, FROM, and SELECT clauses using the employees database.",
             "image": "projects/Coursera_SQL_Subquery_img.png",
             "demo_url": "",
             "most_recent": true,
